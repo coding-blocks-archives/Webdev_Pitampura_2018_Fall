@@ -1,0 +1,25 @@
+/* global selector */
+
+* {
+    color: red;    
+}
+
+
+
+/* element selectors */
+
+p {
+    font-style: italic
+}
+
+.big {
+    font-size: 20pt
+}
+
+.bold {
+    font-weight: bold;
+}
+
+#firsthead {
+    margin-left: 50px;
+}
