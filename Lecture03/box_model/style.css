@@ -1,0 +1,21 @@
+div {
+    border: dotted black 2px;
+    padding: 20px;
+    margin: 20px;
+}
+
+#one {
+    background-color: antiquewhite
+}
+
+#two {
+    background-color: thistle
+}
+
+#three {
+    background-color: burlywood
+}
+
+#four {
+    background-color: lightcyan
+}
