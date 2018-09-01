@@ -1,0 +1,17 @@
+div.clickable:hover {
+    background-color: darkblue;
+    color: white;
+    font-size: 20pt;
+    font-weight: bold;
+}
+div:active {
+    font-style: italic;
+}
+div.clickable {
+    height: 50px;
+    width: 100px;
+    border: solid red 2px;
+}
+input:focus {
+    font-size: 24pt;
+}
