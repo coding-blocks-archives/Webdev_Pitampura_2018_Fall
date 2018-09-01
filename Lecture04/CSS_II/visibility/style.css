@@ -1,0 +1,19 @@
+div {
+    height: 50px;
+    width: 100px;
+    border: solid blue 2px;
+    background-color: aqua;
+}
+
+#one {
+    display: none;
+}
+
+#two {
+    visibility: hidden;
+}
+
+#three {
+    height: 0;
+    visibility: hidden;
+}
