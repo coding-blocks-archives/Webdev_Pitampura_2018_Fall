@@ -1,0 +1,19 @@
+/* 
+ul ul {
+    display: none
+}
+
+li:hover > ul {
+    display: block;
+} 
+*/
+
+li li {
+    visibility: hidden;
+    height: 0;
+}
+
+li:hover > * > li {
+    visibility: visible;
+    height: auto;
+}

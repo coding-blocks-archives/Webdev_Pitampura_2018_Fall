@@ -5,16 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    
     <ul>
         <li>one
             <ol>
-                <li>one . one
+                <li class="level2">one . one
                     <ul>
-                        <li>one . one . one</li>
-                        <li>one . one . two</li>
+                        <li id="one-one-one">one . one . one</li>
+                        <!-- NEVER DO THIS -->
+                        <li id="one-one-one">one . one . two</li>
                         <li>one . one . three</li>
                     </ul>
                 </li>
@@ -24,7 +27,7 @@
         </li>
         <li>two
             <ul>
-                <li>two . one
+                <li class="level2">two . one
                     <ul>
                         <li>two . one . one</li>
                         <li>two . one . two</li>
