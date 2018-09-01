@@ -1,0 +1,20 @@
+div div {
+    padding-left: 20px;
+    color: red;
+}
+
+div > div {
+    color: blue;
+}
+
+p {
+    background-color: lightcoral;
+}
+
+div ~ p {
+    text-align: right;
+}
+
+div + p {
+    font-size: 20pt;
+}
