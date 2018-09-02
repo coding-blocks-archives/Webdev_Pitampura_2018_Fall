@@ -1,0 +1,14 @@
+div {
+    height: 50px;
+    width: 50px;
+    background-color: lightseagreen;
+    margin: 20px;
+    transition: 2s;
+}
+
+#one:hover {
+    transform: scale(2);
+    font-size: 25pt;
+    background-color: red;
+    transition: 2s, background-color 1s, font-size 0.2s;
+}

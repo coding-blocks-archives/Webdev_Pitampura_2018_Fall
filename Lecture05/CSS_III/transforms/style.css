@@ -1,0 +1,35 @@
+div {
+    height: 50px;
+    width: 50px;
+    background-color: saddlebrown;
+    margin: 20px;
+}
+
+#one {
+    transform: translateX(-20px); /* translateY(), translate(X,Y)*/
+}
+
+#two {
+    transform: scale(2, 1.5)
+}
+
+#three {
+    transform: skewY(25deg)
+}
+
+#four {
+    transform: rotate(45deg)
+}
+
+#five {
+    transform: rotateXs(45deg)
+}
+
+#six {
+    transform: matrix(2, 0.5, 0.5, 0.5, 10, 20)
+}
+
+#eight {
+    height: 10px;
+    /* transform: scaleY(0.2) */
+}
