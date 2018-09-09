@@ -1,23 +1,16 @@
-/*
-$(function() {//do somethinghere})
-==
-window.onload = function () {//do somethinghere}
-*/
-$(function () {
-  
-  $('#addtask').click(function () {
-    let task = $('#newtask').val()
-    let item = $('<li>')
-    item.text(task)
-    $('#tasklist').append(item)
-  })
-})
+$(() =>
+  $('body')
+    .append($('<input>').attr('id', 'newtask'))
+    .append(
+      $('<button>')
+        .text('ADD')
+        .click(() => 
+          $('#tasklist').append(
+            $('<li>').text($('#newtask').val())
+          )
+        )
+    )
+    .append($('<ul>').attr('id', 'tasklist'))
+)
 
-// window.onload = function () {
-//   document.getElementById('addtask').onclick = function () {
-//     let task = document.getElementById('newtask').value
-//     let item = document.createElement('li')
-//     item.innerText = task
-//     document.getElementById('tasklist').appendChild(item)
-//   }
-// }
+// $(() => $('body').append($('<input>').attr('id', 'newtask')).append($('<button>').text('ADD').click(() => $('#tasklist').append($('<li>').text($('#newtask').val())))).append($('<ul>').attr('id', 'tasklist')))
