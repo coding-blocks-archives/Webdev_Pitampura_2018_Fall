@@ -1,0 +1,19 @@
+.container {
+    background-color: lightsalmon;
+    height: 400px;
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.item {
+    background-color: darkslateblue;
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+    font-size: 20pt;
+    color: white;
+}
