@@ -1,16 +1,11 @@
-function createAFun() {
-
-  function newFun() {
-    return 'x'
-  }
-  return newFun
+function takesAFun(aFun) {
+  console.log(aFun)
+  console.log(aFun())
 }
 
-let c = createAFun
-let f = createAFun()
 
-console.log(c)
-console.log(f)
-console.log(c())
-console.log(f())
-console.log(c()())
+// takesAFun(10)
+
+takesAFun(function () {
+  return 'wtf'
+})
