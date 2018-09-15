@@ -1,0 +1,7 @@
+ul li:first-child .up-btn {
+  visibility: hidden;
+}
+
+ul li:last-child .down-btn {
+  visibility: hidden;
+}
