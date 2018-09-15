@@ -1,6 +1,5 @@
 $(() => 
     $('body')
-    .append($('<input>').attr('id', 'newtask'))
     .append(
       $('<button>')
         .text('ADD')
@@ -33,7 +32,9 @@ $(() =>
             .append($('<span>').text($('#newtask').val()))
           )
         )
+        .click(() => $('input').val(''))
     )
+    .append($('<input>').attr('id', 'newtask'))
     .append(
       $('<ul>')
         .attr('id', 'tasklist')

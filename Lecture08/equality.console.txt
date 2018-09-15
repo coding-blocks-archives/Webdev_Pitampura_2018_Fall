@@ -1,0 +1,118 @@
+let a = 1
+undefined
+let b = 1
+undefined
+a === b
+true
+a == b
+true
+let arr = [1,1]
+undefined
+let brr = [1,1]
+undefined
+arr === brr
+false
+arr == brr
+false
+Number(1) == Number(1)
+true
+new Number(1) == new Number(1)
+false
+new Number(1)
+Number { 1 }
++new Number(1) == +new Number(1)
+true
+'' == []
+true
+[].toString()
+""
+[1].toString()
+"1"
+0 == []
+true
+[].toString()
+""
++[].toString()
+0
+'\t'
+"	"
++'\t'
+0
++' '
+0
++''
+0
++'\n'
+0
++' .'
+NaN
+'\n' == '\t'
+false
++'\n' == +'\t'
+true
+'\n' == []
+false
+'' == []
+true
+null == undefined
+true
+[] + ''
+""
+[] + ' asdasd' 
+" asdasd"
+[1,2] + 'asdasd'
+"1,2asdasd"
+let x = {a: 10, b: 'asdsad'}
+undefined
+x
+Object { a: 10, b: "asdsad" }
+x.a
+10
+x.b 
+"asdsad"
+let p = {a: 10}
+undefined
+let q = {a:10}
+undefined
+p == q
+false
+p.a == q.a
+true
+p.a === q.a
+true
+[] + {} 
+"[object Object]"
+({}).toString()
+"[object Object]"
+typeof ([])
+"object"
+typeof ({})
+"object"
+[].toString()
+""
+{} + []
+0
+let m = []
+undefined
+let n = {}
+undefined
+m
+Array [  ]
+n
+Object {  }
+m + n
+"[object Object]"
+n + m
+"[object Object]"
+[] + {}
+"[object Object]"
+{} + []
+0
++[]
+0
+10
+10
+{10}
+10
+{10} + []
+0
