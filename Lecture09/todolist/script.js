@@ -22,10 +22,24 @@ $(() => {
     `)
   }
 
+  function generateTodoList() {
+    $('#divTodos').empty()
+    savedTodos.forEach((todo) => {
+      $('#divTodos').append(
+        createTodoItem(todo.task, todo.done)
+      )
+    })
+  }
+
+  generateTodoList()
+
   $('#btnAddTask').click(() => {
-    $('#divTodos').append(
-      createTodoItem($('#inpNewTask').val(), false)
-    )
+    savedTodos.push({
+      task: $('#inpNewTask').val(),
+      done: false
+    })
+    localStorage['todolist'] = JSON.stringify(savedTodos)
+    generateTodoList()
   })
 
 })
