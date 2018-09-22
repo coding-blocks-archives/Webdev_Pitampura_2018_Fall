@@ -1,0 +1,7 @@
+#divTodos>div:first-child .btn-up {
+  visibility: hidden;
+}
+
+#divTodos>div:last-child .btn-down {
+  visibility: hidden;
+}
