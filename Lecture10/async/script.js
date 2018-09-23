@@ -5,11 +5,14 @@ window.onload = () => {
   let count = 0
 
   waitBtn.onclick = function () {
-    let start = new Date().getTime()
-    while (new Date().getTime() < start + 5000) {
+    console.log(Date.now())
 
-    }
-    text.innerText = 'Wait is over'
+    setTimeout(() => {
+      console.log(Date.now())
+      text.innerText = 'Wait is over'
+    }, 5000)
+
+    console.log('wait clicked')
   }
 
   counter.onclick = () => {
