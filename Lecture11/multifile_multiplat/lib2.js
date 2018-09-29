@@ -1,15 +1,16 @@
 (function (module, require) {
 
-  function awesomifier(thing) {
-    return thing + " is awesome!"
+  function uglifier(thing) {
+    return thing + " is ugly";
   }
+
   module.exports = {
-    awesomifier
+    uglifier
   }
 
 })(
   typeof window === 'undefined' ? module :
-      (window.modules || (window.modules = {})) && (window.modules['./lib'] = {})
+      (window.modules || (window.modules = {})) && (window.modules['./lib2'] = {})
   ,
   typeof window === 'undefined' ? require :
     function (path) {
