@@ -68,14 +68,15 @@ function upload(site, file, done) {
 
 download('http://website.com/logo.png', (err, file) => {
   if (err) throw err
-  compress(file, 'zip',  (err, compressedFile) => {
+  compress(file, 'zip', (err, compressedFile) => {
     if (err) {
       console.log(err)
       compressedFile = file
     }
-    upload('ftp://disk.com', compressedFile,  (err, success) => {
+    upload('ftp://disk.com', compressedFile, (err, success) => {
       console.log('all done')
     })
   })
 })
+
 console.log('Doing some tasks')
