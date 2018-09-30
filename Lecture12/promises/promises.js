@@ -8,14 +8,15 @@ const supportedTypes = ['zip', 'tar', 'gzip', 'rar']
  * 1. url starts with http(s)
  *
  * return -
- * data (in string format)
+ * saved File name
  */
 function download(url, done) {
   if (!url.startsWith('http')) {
     return done(new Error('URL format invalid'))
   }
   setTimeout(() => {
-    done(null, 'The downloaded data')
+    done(null, url.split('/').pop())
+    console.log('Downloaded ' + url + ' to ' + url.split('/').pop())
   }, 1000)
 
 }
@@ -39,6 +40,7 @@ function compress(path, type, done) {
   setTimeout(() => {
     let out = path.split('.')[0] + '.' + type
     done(null, out)
+    console.log('Compressed ' + path + ' to ' + out)
   }, 1000)
 }
 
@@ -53,12 +55,26 @@ function compress(path, type, done) {
  * return -
  *  if it was successful (true/false)
  */
-function upload(site, done) {
-  if (!url.startsWith('ftl')) {
+function upload(site, file, done) {
+  if (!site.startsWith('ftp')) {
     return done(new Error('Site must support FTP'))
   }
   setTimeout(() => {
     done(null, true)
+    console.log('Uploaded to ' + site + '/' + file)
   }, 1000)
 
 }
+
+download('http://website.com/logo.png', (err, file) => {
+  if (err) throw err
+  compress(file, 'zip',  (err, compressedFile) => {
+    if (err) {
+      console.log(err)
+      compressedFile = file
+    }
+    upload('ftp://disk.com', compressedFile,  (err, success) => {
+
+    })
+  })
+})
