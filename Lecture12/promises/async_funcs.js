@@ -74,7 +74,8 @@ download('http://website.com/logo.png', (err, file) => {
       compressedFile = file
     }
     upload('ftp://disk.com', compressedFile,  (err, success) => {
-
+      console.log('all done')
     })
   })
 })
+console.log('Doing some tasks')
