@@ -21,6 +21,16 @@ function download(url, done) {
 
 }
 
+function downloadPromise (url) {
+  return new Promise((resolve, reject) => {
+    function resolveOrReject(err, arg1) {
+      if (err) reject(err)
+      else resolve (arg1)
+    }
+    download()
+  })
+}
+
 /**
  * arguments -
  * 1. file name to compress
