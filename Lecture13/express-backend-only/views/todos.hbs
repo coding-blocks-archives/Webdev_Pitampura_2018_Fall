@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<h1>{{title}}</h1>
+<form action="/todos" method="post">
+  <input name="task">
+  <input type="submit" value="ADD">
+</form>
+<ul>
+  {{#each todos as |todo|}}
+    <li>{{todo.name}}</li>
+  {{/each}}
+</ul>
+</body>
+</html>
