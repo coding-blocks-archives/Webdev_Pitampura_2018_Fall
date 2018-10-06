@@ -1,0 +1,50 @@
+{
+  "teachers": [
+    {
+      "name": "Prateek",
+      "center": "Pitampura",
+      "courses": [
+        1,
+        3
+      ]
+    },
+    {
+      "name": "Rishab",
+      "center": "Dwarka",
+      "courses": [
+        2,
+        3
+      ]
+    },
+    {
+      "name": "Anuj",
+      "center": "Noida",
+      "courses": [
+        2,
+        3,
+        4
+      ]
+    }
+  ],
+  "courses": [
+    {
+      "name": "Launchpad",
+      "language": "C++"
+    },
+    {
+      "name": "Crux",
+      "language": "Java"
+    },
+    {
+      "name": "Webdev",
+      "language": "Javascript"
+    },
+    {
+      "name": "Android",
+      "language": "Kotlin"
+    }
+  ]
+}
+
+
+
