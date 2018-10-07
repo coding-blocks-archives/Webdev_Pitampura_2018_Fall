@@ -49,5 +49,5 @@ this should show `sampledb` as one db in the list
 ```mysql
 create table tasks (id integer auto_increment primary key, name text, done boolean);
 
-insert into tasks (name, done) ('task 1', true);
+insert into tasks (name, done) values ('task 1', true);
 ```
