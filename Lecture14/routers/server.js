@@ -12,3 +12,5 @@ app.use('/courses', require('./routes/courses'))
 app.listen(4123, function () {
     console.log("Server started on http://localhost:4123");
 });
+
+"sudo apt-get install mysql-server"
