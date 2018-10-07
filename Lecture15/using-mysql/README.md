@@ -51,3 +51,9 @@ create table tasks (id integer auto_increment primary key, name text, done boole
 
 insert into tasks (name, done) values ('task 1', true);
 ```
+# IF ON MYSQL 8.0
+
+First login as root
+```mysql
+alter user sampleuser2 identified with mysql_native_password by 'samplepass2';
+```
