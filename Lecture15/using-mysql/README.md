@@ -43,3 +43,11 @@ Once inside MySQL shell
 show databases;
 ```
 this should show `sampledb` as one db in the list
+
+# CREATE SCHEMA
+
+```mysql
+create table tasks (id integer auto_increment primary key, name text, done boolean);
+
+insert into tasks (name, done) ('task 1', true);
+```
