@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+<form action="/admin/vendors" method="POST">
+  <input type="text" name="name" id="name">
+  <input type="submit" value="ADD VENDOR">
+</form>
+
+<table border="1" cellpadding="10">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>NAME</th>
+    </tr>
+  </thead>
+
+  {{#each vendors as |vendor|}}
+  <tr>
+    <td>{{vendor.id}}</td>
+    <td>{{vendor.name}}</td>
+  </tr>
+  {{/each}}
+</table>
+
+</body>
+</html>

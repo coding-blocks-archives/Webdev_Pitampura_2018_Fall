@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+<form action="/admin/products" method="POST">
+  <input type="text" name="name" id="name">
+  <select name="vendorId">
+    {{#each vendors as |vendor|}}
+    <option value="{{vendor.id}}">{{vendor.name}}</option>
+    {{/each}}
+  </select>
+  <br>
+  <input type="number" placeholder="Price" name="price" id="price">
+  <input type="number" placeholder="Quantity" name="quantity" id="quantity">
+  <input type="submit" value="ADD PRODUCT">
+</form>
+
+<table border="1" cellpadding="10">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>NAME</th>
+      <th>PRICE</th>
+      <th>VENDOR</th>
+      <th>QUANTITY</th>
+    </tr>
+  </thead>
+
+  {{#each products as |product|}}
+  <tr>
+    <td>{{product.id}}</td>
+    <td>{{product.name}}</td>
+    <td>{{product.price}}</td>
+    <td>{{product.vendor.name}}</td>
+    <td>{{product.quantity}}</td>
+  </tr>
+  {{/each}}
+
+</table>
+
+</body>
+</html>
