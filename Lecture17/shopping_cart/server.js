@@ -1,7 +1,12 @@
 const express = require('express')
+const hbs = require('hbs')
 const {
   db
 } = require('./db')
+
+hbs.registerHelper('price', (price) => {
+  return '₹' + (price / 100).toFixed(2)
+})
 
 const app = express()
 app.set('view engine', 'hbs')

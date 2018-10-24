@@ -5,6 +5,8 @@ const db = new Sequelize({
   username: 'shopping_user',
   password: 'shopping_pass',
   dialect: 'mysql',
+  // dialect: 'sqlite',
+  storage: __dirname + '/shopping.db'
 })
 
 const Vendor = db.define('vendor', {
