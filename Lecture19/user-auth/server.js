@@ -3,6 +3,7 @@ const session = require('express-session')
 const {
   db
 } = require('./db')
+const passport = require('./passport')
 
 const app = express()
 app.use(express.json())
@@ -11,6 +12,10 @@ app.use(session({
   secret: 'wfjgb23o4ubg0384hg3490-gh34-09gh43-gi',
   name: 'mycookiename'
 }))
+
+app.use(passport.initialize())
+app.use(passport.session())
+
 app.set('view engine', 'hbs')
 
 
