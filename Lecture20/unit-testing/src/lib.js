@@ -14,5 +14,12 @@ module.exports = {
       return null
     }
     return nameArr.pop()
+  },
+  getMiddleName: function(fullName) {
+    let nameArr = fullName.split(' ')
+    if (nameArr.length < 3) {
+      return null
+    }
+    return nameArr[1]
   }
 }

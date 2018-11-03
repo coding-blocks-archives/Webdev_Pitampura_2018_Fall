@@ -46,3 +46,17 @@ describe('tests for lib.js/lastname',
 
   }
 )
+
+describe('tests for lib.js/middlename',
+  () => {
+
+    it('should return middle name', () => {
+      const fn = lib.getMiddleName('Ashok Kumar Singh')
+
+      expect(fn).to.be.a('string')
+      expect(fn).to.equal('Kumar')
+    })
+
+
+  }
+)
